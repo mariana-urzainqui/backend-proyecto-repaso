@@ -79,7 +79,7 @@ export const registerUserController = async (req, res) => {
             expiresIn: '1d'
         })
 
-        const url_verification = `https://backend-proyecto-repaso.vercel.app/api/auth/verify/${verificationToken}`
+        const url_verification = `${URL_FRONT}/api/auth/verify/${verificationToken}`
 
         await sendEmail({
             to: email,
