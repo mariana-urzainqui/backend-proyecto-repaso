@@ -16,7 +16,8 @@ const ENVIRONMENT = {
         HOST: process.env.MYSQL_HOST,
         PASSWORD: process.env.MYSQL_PASSWORD,
         DATABASE: process.env.MYSQL_DATABASE
-    }
+    },
+    MONGO_ATLAS_DB: process.env.MONGO_ATLAS_DB
 }
 
 export default ENVIRONMENT

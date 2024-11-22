@@ -2,7 +2,7 @@
 import mongoose from 'mongoose'
 import ENVIRONMENT from '../config/environment.config.js'
 
-mongoose.connect(ENVIRONMENT.DB_URL)
+mongoose.connect(ENVIRONMENT.MONGO_ATLAS_DB)
 .then(
     () => {
         console.log('Conexión exitosa con MONGO_DB')
