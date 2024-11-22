@@ -375,7 +375,7 @@ export const forgotPasswordController = async (req, res) => {
         })
         const resetUrl = `${ENVIRONMENT.URL_FRONT}/reset-password/${resetToken}`
         sendEmail({
-            to: user.email,
+            to: user.email, 
             subject: 'Restablecer contraseña',
             html: `
     <div style="
