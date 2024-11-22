@@ -13,8 +13,10 @@ import ProductRepository from "./repositories/product.repository.js"
 const app = express()
 const PORT = ENVIRONMENT.PORT || 3000
 
-app.use(cors())
-app.use(express.json({limit: '5mb'}))
+app.use(cors({
+    origin: 'https://frontend-proyecto-repaso.vercel.app'
+}))
+app.use(express.json({ limit: '5mb' }))
 app.use(verifyApiKeyMiddleware)
 
 app.use('/api/status', statusRouter)
